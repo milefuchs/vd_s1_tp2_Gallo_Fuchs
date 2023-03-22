@@ -10,6 +10,11 @@ d3.csv("astronautasygraficos.csv", d3.autoType).then((data) => {
     height: 400,
     color: {
       legend: true,
+      scheme: "set3"
+    },
+    style: {
+      background:'hsl(0, 0%, 0%)',
+      color: 'white',
     },
     
   });       
