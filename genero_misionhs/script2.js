@@ -1,6 +1,6 @@
 d3.csv("astronautasygraficos.csv", d3.autoType).then((data) => {
   let chart =   Plot.plot({
-    marks: [Plot.dot(data, { x: "genero", y: "mision_hs", stroke: "ocupacion", r: 10, opacity: 0.5 })],
+    marks: [Plot.dot(data, { x: "genero", y: "mision_hs", fill: "ocupacion", r: 10, opacity: 0.5 })],
     nice: true,
     line: true,
     grid: true,
@@ -10,7 +10,7 @@ d3.csv("astronautasygraficos.csv", d3.autoType).then((data) => {
     height: 400,
     color: {
       legend: true,
-      scheme: "set3"
+
     },
     style: {
       background:'hsl(0, 0%, 0%)',

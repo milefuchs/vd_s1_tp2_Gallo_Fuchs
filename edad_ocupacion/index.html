@@ -12,18 +12,32 @@
       #chart svg{
         max-width: initial;
       }
+      *{
+        background: black;
+        color: rgb(255, 255, 255);
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 14px;
+      }
+      h1{
+        text-align: center;
+        font-size: 25px;
+        font-weight: bold;
+      }
+      .plot-legend {
+        background: black !important;
+      }
+    
     </style>
   </head>
   <body>
     
-
+    <h1>Rango etario por ocupacion</h1>
     <div id="chart"></div>
 
     <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
     <script src="https://cdn.jsdelivr.net/npm/@observablehq/plot@0.6"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/iframe-resizer/4.3.2/iframeResizer.contentWindow.js"></script>
     <script src="script1.js"></script>
-    <script src="../aniomision_misionhs/script.js"></script>
-    <a href="edad_ocupacion/index.html">hola</a>
+    
   </body>
 </html>

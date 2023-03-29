@@ -9,7 +9,7 @@ d3.csv('astronautasygraficos.csv', d3.autoType).then(data => {
             x1: 'min',
             x2: 'max',
           },
-          { x: 'edad_mision', y: 'ocupacion', fill: 'mision_hs', opacity: 0.5  },
+          { x: 'edad_mision', y: 'ocupacion', fill: 'ocupacion', opacity: 0.5  },
         ),
       ),
     ],
@@ -23,8 +23,8 @@ d3.csv('astronautasygraficos.csv', d3.autoType).then(data => {
     line: true,
     marginLeft: 300,
     color: {
-      legend: true,
       scheme: 'greens',
+      //legend: true, //tengo que hacer que se ponga negro el fond
     },
     style: {
       background:'hsl(0, 0%, 0%)',

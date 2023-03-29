@@ -23,11 +23,12 @@ d3.csv("astronautasygraficos.csv", d3.autoType).then((data) => {
     line: true,
     nice: true,
     marginLeft: 300,
+    marginRight: 100,
     width: 1000,
     
     color:{
       legend: true,
-      range: ["green","#EA5455","#8F43EE", "purple", "orange", "yellow", "blue", "pink", "#16FF00", "grey", "#DC8449", "lavender", "white", "lightblue", "#408E91"], 
+      range: ["red","#7DB9B6","#8F43EE", "purple", "#FF008E", "#3C2317", "blue", "#FC7300", "white", "grey", "#DC8449", "yellow", "#16FF00"], 
     }
     
   });

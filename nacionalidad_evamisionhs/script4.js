@@ -1,7 +1,9 @@
 d3.csv("astronautasygraficos.csv", d3.autoType).then((data) => {
   let chart =  Plot.plot({
     marks: [
-      Plot.dot(data, { x: "nacionalidad", y: "eva_mision_hs", fill: "status", r: 10, opacity: 0.5}),
+      Plot.barX(data,
+        { x: "eva_mision_hs", y: "nacionalidad", fill: "status"},
+      ),
     ],  
 
     style: {
@@ -14,9 +16,9 @@ d3.csv("astronautasygraficos.csv", d3.autoType).then((data) => {
     nice: true,
     color: {
       legend: true,
-      
+      range: ["yellow", "#E900FF"],  
     },
-    marginLeft: 100,
+    marginLeft: 250,
     width: 1500,
     height: 400,
     
