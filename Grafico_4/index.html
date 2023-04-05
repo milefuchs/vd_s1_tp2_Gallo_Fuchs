@@ -4,10 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Chart 05</title>
+    <title>Chart 02</title>
     <style>
       #chart{
         overflow-y:auto;
+        display: flex;
+        justify-content: center;
+        align-items: center; 
       }
       #chart svg{
         max-width: initial;
@@ -19,20 +22,22 @@
         font-size: 14px;
       }
       h1{
+        margin-top: 60px;
         text-align: center;
-        font-size: 25px;
-        font-weight: bold;
+        font-size: 30px;
+        font-weight: 700;
+        color: #E3E3E3;
+        background-color: #04240d;
       }
     </style>
   </head>
   <body>
-    <h1>Horas de mision por año</h1>
-
+    <h1>Cantidad de horas de mision por nacionalidad</h1>
     <div id="chart"></div>
+
     <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
     <script src="https://cdn.jsdelivr.net/npm/@observablehq/plot@0.6"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/iframe-resizer/4.3.2/iframeResizer.contentWindow.js"></script>
-    <script src="script.js"></script>
-
+    <script src="script2.js"></script>
   </body>
 </html>

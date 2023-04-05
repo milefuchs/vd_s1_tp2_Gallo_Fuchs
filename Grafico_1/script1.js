@@ -22,9 +22,13 @@ d3.csv('astronautasygraficos.csv', d3.autoType).then(data => {
     nice: true,
     line: true,
     marginLeft: 300,
+    marginBottom:100,
+    x: {
+      labelOffset: 35,
+      labelAnchor:'center',
+    },
     color: {
       scheme: 'greens',
-      //legend: true, //tengo que hacer que se ponga negro el fond
     },
     style: {
       background:'hsl(0, 0%, 0%)',

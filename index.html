@@ -19,15 +19,72 @@
         font-family:'Courier New', Courier, monospace;
         text-indent: 20px;
       }
-      h1{
-        text-align: center;
-        font-size: 25px;
+
+      p{
+        text-align: left;
+        color: #E3E3E3;
         font-weight: bold;
+      }
+      h1{
+        margin-top: 10px;
+        text-align: center;
+        font-size: 50px;
+        font-weight: 700;
+        color: #E3E3E3;
+        background-color: #0F1626;
+        padding: 20px;
       }
 
       h2{
+        text-align: center;
+        font-size: 25px;
+        line-height: 10px;
+        margin-bottom: 80px;
+        color: #E3E3E3;
+        background-color: #17223a;
+        padding: 20px;
+      }
+
+      p{
         font-size: 18px;
         line-height: 54px;
+      }
+      
+      figure {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
+        line-height: 20px;
+      }
+      
+      figcaption {
+        font-size: 16px;
+        font-weight: bold;
+        text-align: center;
+        margin-top: 10px;
+        background-color:#0F1626;
+        color: #ffffff;
+      }
+
+      .btn img {
+        display: block;
+        width: 100%;
+        height: auto;
+      }
+
+      .btn:hover img {
+        transform: translateY(-5px);
+      }
+      
+      .btn:hover .caption {
+        transform: translateY(-5px);
+      }
+
+      img {
+        max-width: 100%;
+        height: auto;
+        margin: 20px;
       }
     </style>
   </head>
@@ -35,25 +92,45 @@
     
 
     <div id="chart"></div>
-    <h1>TP 2 Explicar con Datos</h1>
+    <p>
+      TP 2 Explicar con Datos - Delfina Gallo y Milena Fuchs
+    </p>
+    <h1>Astronautas</h1>
+    <h2>Graficos sobre distintos aspectos del trabajo de los astronautas </h2>
 
     <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
     <script src="https://cdn.jsdelivr.net/npm/@observablehq/plot@0.6"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/iframe-resizer/4.3.2/iframeResizer.contentWindow.js"></script>
-    
-    <h2>
-      <ul>
-        <li><a href="edad_ocupacion/index.html"> Rangos de edad por cada ocupacion</a></li>
-    
-        <li><a href="genero_misionhs/index.html"> Horas de mision por genero</a></li>
-        
-        <li><a href="misionhs_anio/index.html"> Horas de mision por año</a></li>
-        
-        <li><a href="nacionalidad_evamisionhs/index.html"> Horas de mision extravehiculares por nacionalidad</a></li>
-        
-        <li><a href="aniomision_misionhs/index.html"> Horas de mision por año</a></li>
-      </ul>
-    </h2>
+
+
+    <figure>
+      <figcaption>Grafico 1</figcaption>
+      <a href="Grafico_1/index.html" style="display: inline-block;"class="btn">
+      <img src="mundo.png" style="vertical-align: middle;" > 
+      <span class="caption"></span>
+    </a>
+      
+
+      <figcaption>Grafico 2</figcaption>
+      <a href="Grafico_2/index.html" style="display: inline-block;"class="btn">
+      <img src="astronauta.png" style="vertical-align: middle;" > 
+      <span class="caption"></span>
+    </a>
+
+    <figure>
+      <figcaption>Grafico 3</figcaption>
+      <a href="Grafico_3/index.html" style="display: inline-block;"class="btn">
+      <img src="casco.png" style="vertical-align: middle;" > 
+      <span class="caption"></span>
+    </a>
+
+    <figure>
+      <figcaption>Grafico 4</figcaption>
+      <a href="Grafico_4/index.html" style="display: inline-block;"class="btn">
+      <img src="nave.png" style="vertical-align: middle;" > 
+      <span class="caption"></span>
+    </a>
+    </figure>
 
 
 
